@@ -54,6 +54,22 @@
 >
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+<!-- Weiches Grundlicht -->
+<a-entity
+  light="type: ambient; intensity: 1.2; color: #ffffff">
+</a-entity>
+
+<!-- Hauptlicht von vorne -->
+<a-entity
+  light="type: directional; intensity: 1.5; color: #ffffff"
+  position="0 1 1">
+</a-entity>
+
+<!-- leichtes Aufhelllicht von der Seite -->
+<a-entity
+  light="type: directional; intensity: 0.8; color: #ffffff"
+  position="1 1 0">
+</a-entity>
 
     <!-- Target -->
     <a-entity mindar-image-target="targetIndex: 0">
@@ -69,5 +85,6 @@
   </a-scene>
 </body>
 </html>
+
 
 
