@@ -49,8 +49,8 @@ mindar-image="
   imageTargetSrc: targets/busch.mind;
   uiScanning: yes;
   uiLoading: yes;
-  filterMinCF: 0.002;
-  filterBeta: 6;
+  filterMinCF: 0.001;
+  filterBeta: 0.01;
   warmupTolerance: 5;
 "
 
@@ -78,8 +78,7 @@ mindar-image="
         gltf-model="url(assets/model.glb)"
         position="0 0.22 0"
         scale="0.25 0.25 0.25"
-        rotation="0 0 0"
-animation-mixer="clip: TextAction; loop: repeat;"    
+        rotation="0 0 0"    
         </a-entity>
   </a-scene>
 </body>
